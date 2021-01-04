@@ -1,0 +1,20 @@
+h3 {
+    float: left;
+    width: 200px;
+}
+
+ul {
+    float: right;
+    width: 200px;
+}
+
+.receita {
+    width: 500px;
+    border: 1px solid #000;
+    overflow: auto;
+}
+
+p {
+    width: 500px;
+    text-align: justify;
+}

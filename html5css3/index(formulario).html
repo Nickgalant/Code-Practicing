@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+       <meta charset="utf-8">
+    <meta name="viewport" content="device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Crie sua Conta do Hello Pizza</title>
+</head>
+<body>
+    <form method="GET" action="http://arquivo.devmedia.com.br/projeto/requisicao.php">
+        <h2>Crie sua Conta do Hello Pizza</h2>
+        <div>
+            <fieldset>
+                <legend>Conta:</legend>
+                <div>
+                    <label>Email: </label>
+                    <input type="email" name="email" minlength="6" maxlength="250" multiple required>
+                    <br>
+                    <label>Senha: </label>
+                    <input type="password" name="senha" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Pessoal</legend>
+                <div>
+                    <label>Nome: </label>
+                    <input type="text" name="name" placeholder="Ex: Bruno" required autocomplete>
+                    <br>
+                    <label>Telefone: </label>
+                    <input type="tel" name="tel" placeholder="Ex: (99) 99999-9999" pattern="\([0-9]{2}\)[\s][0-9]{5}-[0-9]{4}" maxlength="15">
+                    <br>
+                    <label>Sexo: </label>
+                    <input type="radio" name="sexo" value="masculino" checked> <label>Masculino</label>
+                    <input type="radio" name="sexo" value="feminino"> <label>Feminino</label>
+                    <br>
+                    <label>Data de nascimento: </label>                        
+                    <input type="date" name="data" required>
+                    <br>
+                    <label>Foto de perfil: </label>
+                    <input type="file" name="perfil" accept="image/*">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Endereço: </legend>
+                <div>
+                    <label>Rua </label>
+                    <input type="text" name="endereco_rua" required>
+                    <br>
+                    <label>Numero </label>
+                    <input type="number" name="endereco_numero" value="0" min="1" max="1000" required>
+                    <br>
+                    <label>Complemento </label>
+                    <input type="text" name="endereco_complemento">
+                    <br>
+                    <label>Cidade </label>
+                    <input type="text" name="endereco_cidade" required>
+                    <br>
+                    <label>Estado </label>
+                    <select name="endereco_estado">
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Anuncio: </legend>
+                <div>
+                    <label>Como conheceu o HelloPizza: </label>
+                    <textarea placeholder="Conte a sua historia e diga para a gente como conheceu a melhor pizzaria do Brasil" name="adicional" rows="10" cols="20"></textarea>
+                    <br>
+                    <input type="checkbox" name="utilizou" value="sim" checked> <label>Desejo receber ofertas por e-mail</label>
+                </div>
+            </fieldset>
+        </div>
+        <input type="submit" value="Finalizar cadastro">
+    </form>
+</body>
+</html>
